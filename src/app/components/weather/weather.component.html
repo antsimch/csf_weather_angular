@@ -1,0 +1,27 @@
+<h3>{{city}}</h3>
+<button type="button" (click)="goBack()">Back</button>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Description: </th>
+                <th>Icon: </th>
+                <th>Temperature: </th>
+                <th>Humidity: </th>
+                <th>Wind Speed: </th>
+                <th>Wind Degree:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{weather.description}}</td>
+                <td>{{weather.icon}}</td>
+                <td>{{weather.temperature}}</td>
+                <td>{{weather.humidity}}</td>
+                <td>{{weather.windSpeed}}</td>
+                <td>{{weather.windDegree}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

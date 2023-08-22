@@ -1,0 +1,19 @@
+<div>
+    <tr>
+        <td>
+            <h3>City: </h3>
+        </td>
+        <td>
+            <input type="text" #city>
+        </td>
+        <td>
+            <button type="button" (click)="addToList(city.value)">Add</button>
+        </td>
+    </tr>
+</div>
+
+<div>
+    <tr *ngFor="let city of cities">
+        <a [routerLink]="[ '/weather', city ]">{{city}}</a>
+    </tr>
+</div>
